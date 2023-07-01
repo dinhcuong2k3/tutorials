@@ -1,0 +1,22 @@
+CÁC THUỘC TÍNH CSS THƯỜNG DÙNG
+1. margin
+2. padding
+3. hight
+4. width
+5. max-width
+6. border
+7. background
+8. box-sizing
+9. font-family
+10. font-size
+11. display
+12. justify-content
+13. color
+14. list-style
+15. text-decoration
+16. border-radius
+17. line-hight
+18. src
+19. overflow
+20. text-align
+21. align-items

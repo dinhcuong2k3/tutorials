@@ -1,0 +1,26 @@
+CÁC THẺ THƯỜNG DÙNG TRONG HTML
+1. html
+2. head
+3. link
+4. title
+5. body
+6. div
+7. a
+8. img
+9. h
+10. p
+11. table
+12. tr
+13. td
+14. th
+15. ul
+16. li
+17. input
+18. button
+19. header
+20. footer
+21. span
+22. nav
+23. ol 
+24. label
+25. caption

@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.khung{
+    width: 1240px;
+    height: 640px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    margin: auto;
+}
+.right img{
+    width: 740px;
+    height: 640px;
+}
+.left{
+    margin-left: 160px;
+    margin-top: 91px;
+}
+.left .logo-branko{
+    margin-bottom: 62px;
+}
+@font-face {
+    font-family:font_strong;
+    src:url('./font/Source_Sans_3/static/SourceSans3-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style:normal;
+}
+@font-face {
+    font-family:font_strong1;
+    src:url('./font/Source_Sans_3/static/SourceSans3-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style:normal;
+}
+.left p:nth-child(2){
+    font-family: 'font_strong';
+    font-size: 30px;
+    line-height: 103.5%;
+    letter-spacing: 2px;
+}
+.left p:nth-child(3){
+    font-family: 'font_strong1';
+    font-size: 100px;
+    font-weight: 900;
+    line-height: 103.5%;
+    letter-spacing: 2px;
+}
+.left p:nth-child(4){
+    font-family: 'font_strong1';
+    font-size: 100px;
+    font-weight: 900;
+    line-height: 103.5%;
+    letter-spacing: 2px;
+    margin-bottom: 125px;
+}
+.left p:nth-child(5){
+    font-family: 'font_strong';
+    font-size: 24px;
+    line-height: 120%;
+}
+.left i{
+    color: red;
+}
+
