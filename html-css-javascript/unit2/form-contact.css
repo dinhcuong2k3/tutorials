@@ -68,9 +68,6 @@ form{
     border-radius: 5px;
     width: 100px;
 }
-.control:focus{
-    outline: none;
-}
 
 /**Error**/
 .form__item--error .control {
