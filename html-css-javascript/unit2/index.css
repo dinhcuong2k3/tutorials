@@ -601,3 +601,123 @@ nav ul li a:hover{
         line-height: 20px;
     }
 }
+
+
+.student-form {
+    width: 100%;;
+    max-width: 500px;
+    margin: auto;
+}
+.student-form__title {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+.form {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.form__item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.form__item label{
+    font-weight: bold;
+    color: white;
+}
+.form__action {
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.form__control {
+    border: 1px solid #bdb8b8;
+    padding: 7px 10px;
+    border-radius: 5px;
+}
+.form__control:focus {
+    outline: none;
+}
+
+.form__button {
+    border: none;
+    padding: 10px 15px;
+    background-color: #1677ff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 40px;
+}
+.form__button:hover{
+    background-color: #005ee2;
+}
+.close{
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: rgb(255, 0, 149);
+    color: white;
+    outline: none;
+    border: none;
+    margin-left: 30px;
+    cursor: pointer;
+}
+.close:hover{
+    background-color: rgb(226, 9, 136);
+}
+
+/**Error**/
+.form__item--error .form__control {
+    border-color: red;
+}
+.form__error-message {
+    font-size: 12px;
+    color: rgb(0, 255, 255);
+}
+
+
+.popup {
+    position: fixed;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    padding: 40px;
+    border-radius: 10px;   
+    background: linear-gradient(to right, blue, rgb(174, 0, 255), rgb(255, 0, 234),rgb(255, 0, 149));
+}
+
+.popup.hide {
+    display: none;
+}
+.popup-outline {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.popup-outline.hide {
+    display: none;
+}
+
+@media only screen and (max-width: 675px){
+    .popup {
+        position: fixed;
+        top: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 300px;
+        padding: 10px;
+    }
+    .form__button {
+        position: fixed;
+        bottom: 0;
+        margin-bottom: 10px;
+    }
+}
