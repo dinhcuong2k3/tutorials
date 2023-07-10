@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="index.css">
-
     <title>Document</title>
+    <script src="Popup.js"></script>
+    
 </head>
 <body>
     <div class="frame">
@@ -24,7 +25,7 @@
                             <li><a href="#">About</a></li>
                             <li><a href="#">Tech Stack</a></li>
                             <li><a href="#">Projects</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a onclick="openPopup()" href="#">Contact</a></li>
                         </ul>
                     </nav>
                     <div class="icons">
@@ -33,6 +34,34 @@
                         <a href=""><img class="anh3" src="../unit2/picture/Vector (2).png" alt=""></a>
                     </div>
                 </div>
+            </div>
+
+            <div class="popup-outline hide"></div>
+        
+            <div class="popup hide" id="helloPopup">
+                <h2 class="student-form__title">Contack</h2>
+                <form class="form" name="studentForm" onsubmit="return validateForm()">
+                    
+                    <div class="form__item" id="firstNameFormItem">
+                        <label for="firstName">Họ Tên</label>
+                        <input class="form__control" maxlength="10" id="firstName" name="firstName"/>
+                    </div>
+
+                    <div class="form__item" id="emailFormItem">
+                        <label for="Email">Email</label>
+                        <input class="form__control" maxlength="100" id="Email" name="Email"/>
+                    </div>
+
+                    <div class="form__item">
+                        <label for="notes">Tin Nhắn</label>
+                        <textarea class="form__control" name="notes" id="notes"></textarea>
+                    </div>
+
+                    <div class="form__item form__action">
+                        <input class="form__button" type="submit"/>
+                    </div>
+                </form>
+                <button class="close" onclick="closePopup()">Close</button>
             </div>
         </header>
         <div class="content">
